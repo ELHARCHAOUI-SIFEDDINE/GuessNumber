@@ -1,0 +1,63 @@
+.gradient-bg-body {
+    background: linear-gradient(135deg, #1f2937, #3b4252, #4c566a);
+}
+
+.gradient-bg-game {
+    background: linear-gradient(135deg, #2a2a72, #009ffd);
+}
+
+.glow {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.button-glow {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.input-glow {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.message {
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.5);
+}
+
+@media (max-width: 640px) {
+    .input-container {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .game-container {
+        padding: 2rem;
+        width: 90%;
+    }
+
+    .number {
+        font-size: 4rem;
+    }
+
+    .message {
+        font-size: 1rem;
+    }
+
+    .hint {
+        text-align: center;
+    }
+}
+
+.winner-bg {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    animation: sparkle 1.5s infinite alternate;
+}
+
+@keyframes sparkle {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+}
